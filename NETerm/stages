@@ -1,0 +1,24 @@
+stages
+
+$project = specific field
+$match = filter(reduce) number of docs. remove duplicate
+$limit = limit number of docs
+$unwind = splits array into one doc for each element in the array
+$group = group docs by distinct key(primary key)
+$sort = returns input docs to sorted order(ascending/descending)
+$out = last stage, creates/replaces unsharded collection with input docs
+
+arithmetic
+abs, add, sub, mul, div
+
+group
+sum, avg, max, min, first, last
+
+date
+year, month, week, hour, minute, second
+
+comparison
+eq, lt, lte, gt, gte
+
+boolean
+and, or
